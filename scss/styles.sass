@@ -1,0 +1,466 @@
+
+html,body
+  height: 100%
+  margin: 0
+
+
+body
+  margin: 0
+  font-size: 14px
+  font-family: Montserrat-Regular, sans-serif
+
+img
+  max-width: 100%
+  margin: 0
+.wrapper
+  max-width: 100%
+  height: 400px
+
+.scene
+  position: absolute
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
+  min-height: 41vh
+  height: 50vh
+  max-width: 100%
+
+
+.layer
+  position: absolute
+  left: -10%
+  top: 0
+  width: 110%
+  height: 80%
+.layer_bg
+  background: url("../img/parallax_bg.jpg") center no-repeat
+  background-size: cover
+.layer-1
+  background: url("../img/parallax_layer1.png") center no-repeat
+  background-size: cover
+.layer-2
+  background: url("../img/parallax_layer2.png") center no-repeat
+  background-size: cover
+
+.presentation
+  width: 20%
+
+.container_header
+  width: 100%
+  display: flex
+  justify-content: center
+  flex-direction: column
+//TYPED
+.changing_text
+  display: block
+  color: black
+  position: relative
+  text-transform: uppercase
+  left: 10%
+  top: 10%
+  #typed
+    line-height: 1.4em
+    font-size: 1.3em
+    display: block
+    width: 100px
+    height: 18px
+.header
+  display: flex
+  position: relative
+  .text.poster
+    display: flex
+    justify-content: space-around
+    font-size: 1.3em
+    margin: 20px 20px 0 20px
+#day_time
+  color: rgb(239, 13, 51)
+
+
+.intro
+  display: flex
+  flex-direction: column
+
+
+.wow_block
+  margin:  0 auto
+  background: url("../img/bg-texture.png")
+  font-family: Montserrat-Regular, sans-serif
+  border: #f1c40f 2px solid
+  .center
+    display: inline-block
+    text-align: center
+    position: relative
+    margin: 0 auto
+    height: auto
+    padding: 1vh 0 1.5vh 0
+  h4
+    margin: 2vh
+    font-size: 1.5em
+    color: #469aad
+  span
+    margin-bottom: 10px
+    font-size: 1.2em
+  h3
+    color: #469aad
+    font-size: 1.8em
+    text-align: center
+    padding-top: 30px
+
+.my_skills
+  margin: 0 auto
+  max-width: 900px
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+.box
+  height: auto
+  margin: 20px 0 20px 0
+  border: 1px solid #ccc
+  display: flex
+  box-shadow: 0 10px 10px -5px, 5px 0 5px -5px
+  flex-basis: 400px
+  z-index: 10
+  background-color: rgba(177, 177, 177, 0.3)
+
+.box1
+  display: flex
+  justify-content: space-between
+  box-shadow: 0 10px 10px -5px, 5px 0 5px -5px
+  background-color: rgba(177, 177, 177, 0.3)
+  margin: 0 0 20px 0
+  flex-basis: 100%
+
+.skills
+  margin-left: 10px
+  font-size: 1.2em
+.mr_top
+  margin-top: 10px
+
+
+
+  //ФОРМА ДЛЯ СВЯЗИ
+.sl_block
+  width: 100%
+  position: relative
+  display: flex
+  justify-content: center
+  height: 500px
+  .contacts_content
+    position: absolute
+    top: 50%
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row
+    z-index: 20
+    justify-content: center
+    width: 60%
+    transform: translateY(-50%)
+    //background-color: blue
+    .caption
+      color: rgb(70, 154, 173)
+      font-size: 20px
+      text-align: center
+      font-weight: bold
+      margin: 20px 0 20px 0
+    .contacts-area
+      background-color: #b1b1b1
+      width: calc(40% - 15px)
+      border-radius: 10px 0 0 10px
+      display: flex
+      flex-direction: column
+      padding: 10px
+      .contact_list
+        padding-left: 35px
+        display: flex
+        flex-direction: column
+
+        .contact_info
+          margin-bottom: 19px
+        i
+          font-size: 19px
+        a
+          text-decoration: none
+          margin-left: 1rem
+          font-weight: 400
+          color: rgb(0, 0, 0)
+          font-size: 1.5em
+      .social_area
+        display: flex
+        align-items: center
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: space-around
+        margin-top: 30px
+        .social_icon
+          font-size: 32px
+  .form_area
+    background-color: rgb(255, 255, 255)
+    width: calc(60% - 25px)
+    border-radius: 0 10px 10px 0
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    position: relative
+    padding: 10px
+    .contact_form
+      width: 100%
+    .mini_inputs
+      padding: 0 8px
+      .input_data
+        position: relative
+        margin-bottom: 1.5rem
+        input
+          width: 100%
+          height: 45px
+          border: 1px solid #9c9c9c
+          border-radius: 6px
+          font-size: 1.2em
+
+          position: relative
+        label
+          position: absolute
+          top: 50%
+          -webkit-transform: translateY(-50%)
+          -ms-transform: translateY(-50%)
+          transform: translateY(-50%)
+          left: 20px
+          -webkit-transition: all .15s
+          transition: all .15s
+          font-size: 18px
+
+    .text_form
+      position: relative
+      textarea
+        height: 80px
+        resize: none
+        margin-bottom: 15px
+        border: 1px solid #9c9c9c
+        border-radius: 6px
+        font-size: 1.2em
+        padding-top: 10px
+        width: 100%
+      label
+        position: absolute
+        top: 25%
+        -webkit-transform: translateY(-50%)
+        -ms-transform: translateY(-50%)
+        transform: translateY(-50%)
+        -webkit-transition: all .15s
+        transition: all .15s
+        font-size: 18px
+        padding: 20px
+    button
+      cursor: pointer
+      font-weight: 400
+      background-color: rgb(239, 13, 51)
+      display: inline-block
+      color: rgb(255, 255, 255)
+      font-size: 1.5rem
+      width: 180px
+      height: 45px
+      position: relative
+      overflow: hidden
+      border-radius: 4px
+      border: none
+      transition: all 0.15s
+      -webkit-transition: all .15s
+      margin-top: 1.5rem
+      margin-bottom: 10px
+    button:hover
+      transition: all 0.15s
+      background-color: rgb(219, 4, 32)
+  .sl
+    position: relative
+    width: 100%
+    margin: 0 auto
+    //padding-bottom: 80%
+    height: 0
+    .sl1, .sl2, .sl3
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 500px
+    .sl1
+      background: url("../img/allpc.jpg")  no-repeat center center fixed
+      background-size: cover
+      animation: fade 15s infinite
+      -webkit-animation: fade 15s infinite
+
+
+    .sl2
+      background: url("../img/keyboard.jpg")  no-repeat center center fixed
+      background-size: cover
+      animation: fade2 15s infinite
+      -webkit-animation: fade2 15s infinite
+    .sl3
+      background: url("../img/77.jpg")  no-repeat center center fixed
+      background-size: cover
+      animation: fade3 15s infinite
+      -webkit-animation: fade3 15s infinite
+
+.my_works
+  display: flex
+  flex-direction: row
+  position: relative
+  width: 100%
+  border: blue 2px solid
+.content
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  margin: auto
+  height: auto
+  width: 100%
+
+/*Блок основной со слайдером и текстами*/
+.article
+  display: flex
+  position: relative
+
+
+.main_description
+  flex-wrap: wrap
+  display: flex
+  
+
+.block_wrap
+  flex-wrap: wrap
+  display: flex
+  box-sizing: border-box
+  flex-direction: row
+  justify-content: space-between
+  width: 100%
+
+.block_wrap .block_img
+  display: flex
+  justify-content: center
+
+
+
+.block_img, .block_text
+  height: auto
+  width: calc(50% - 40px)
+  margin: 20px
+
+.description_header
+  color: #fd1c18
+  line-height: 1.5
+  font-weight: 700
+  font-size: 1em
+  text-transform: uppercase
+
+.block_text p
+  margin-bottom: 15px
+
+.see_example, .footer_directions
+  text-transform: uppercase
+  color: #000
+  padding: 5px 8px
+  border: 2px solid #000
+  font-weight: 700
+  text-decoration: none
+
+
+.block_wrap p
+  margin-top: 10px
+
+
+@keyframes fade
+  0%
+    opacity: 1
+  33.333%
+    opacity: 0
+  66.666%
+    opacity: 0
+  100%
+    opacity: 1
+
+
+@keyframes fade2
+  0%
+    opacity: 0
+  33.333%
+    opacity: 1
+  66.666%
+    opacity: 0
+  100%
+    opacity: 0
+
+
+
+@keyframes fade3
+  0%
+    opacity: 0
+  33.333%
+    opacity: 0
+  66.666%
+    opacity: 1
+  100%
+    opacity: 0
+
+@media only screen and (max-width: 1000px)
+  .sl_block .contacts_content
+    width: 90%
+    margin-top: 45px
+
+@media only screen and (max-width: 1000px)
+  .scene
+    height: 50vh
+  .my_skills
+    justify-content: space-around
+    margin-bottom: 45px
+
+
+  .container_header
+    .text.poster
+      display: inline-block
+      flex-direction: row
+      justify-content: center
+      .changing_text
+        font-size: 1em
+        top: 0
+        left: 0
+        text-align: center
+        #typed
+          width: 300px
+          margin: 0 auto
+  .presentation
+    width: 100%
+    text-align: center
+@media only screen and (max-width: 992px)
+  .sl_block .contacts_content
+    width: 100%
+
+    .contacts-area, .form_area
+      border-radius: 0
+
+
+@media only screen and (max-width: 768px)
+  .sl_block
+    .contacts_content
+      flex-direction: column
+      .form_area, .contacts-area
+        width: 100%
+        padding: 0
+        .mini_inputs
+          input
+            padding: 0
+
+          .text_form
+            width: calc(100% - 2px)
+            label
+              top: 71%
+
+
+@media only screen and (max-width: 540px)
+
+    .contacts-area ul>li
+      height: 2vh
+      margin-bottom: 1rem
+      padding-left: 5px
+
