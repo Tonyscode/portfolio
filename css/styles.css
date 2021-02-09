@@ -327,10 +327,10 @@ img {
 
 .block_wrap .block_img {
   display: block;
-  justify-content: center; }
-
-.block_img img {
-  border-radius: 5px; }
+  justify-content: center;
+  align-self: center; }
+  .block_wrap .block_img img {
+    border-radius: 5px; }
 
 .block_img, .block_text {
   height: auto;
@@ -367,7 +367,6 @@ img {
   list-style-type: none; }
 
 .block_text ul > li {
-  color: #ef0d33;
   border-radius: 20px;
   border: 1px solid #000;
   font-weight: 400;

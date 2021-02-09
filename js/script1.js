@@ -59,10 +59,10 @@ $('textarea').focus(function(){
     $(this).parents('.text_form').find('label').css({
         fontSize: '10px',
         color: '#868686',
-        top: '10px',
-
-
-
+        top: '10px'
     });
+});
 
+$(document).ready(function() {
+    $('.portfolio_image').magnificPopup({type:'image'});
 });
