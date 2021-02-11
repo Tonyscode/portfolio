@@ -63,6 +63,32 @@ $('textarea').focus(function(){
     });
 });
 
+$('.contact_form').submit(function (e) {
+    e.stopPropagation();
+    e.preventDefault();
+    let data = {};
+    $.map($('.contact_form').serializeArray(), function(n,i){
+        data[n['name']] = n['value'];
+    });
+    if (data.name == '') {
+        alert('Заполните данные для связи!');
+        $('#name')[0].focus();
+        return;
+    }
+    if (data.phone == '') {
+        alert('Заполните данные для связи!');
+        $('#phone')[0].focus();
+        return;
+    }
+    $.post('https://old.ecodetki.in.ua/include/portfolio/send_mail.php', data)
+        .done(function(data) {
+            alert('Спасибо за обращение! Я постараюсь с Вами связаться как можно быстрее...');
+        })
+        .fail(function(data) {
+            alert('Упс! Что-то пошло не так... Бум разбираться...');
+        })
+});
+
 $(document).ready(function() {
     $('.portfolio_image').magnificPopup({type:'image'});
 });
