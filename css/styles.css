@@ -22,14 +22,15 @@ img {
   top: 0;
   right: 0;
   bottom: 0;
-  max-width: 100%; }
+  max-width: 100%;
+  z-index: -10; }
 
 .layer {
   position: absolute;
   left: -10%;
   top: 0;
   width: 110%;
-  height: 215px; }
+  height: 210px; }
 
 .layer_bg {
   background: url("../img/parallax_bg.jpg") center no-repeat;
