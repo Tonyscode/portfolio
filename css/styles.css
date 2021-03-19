@@ -426,9 +426,6 @@ img {
     opacity: 1; }
   100% {
     opacity: 0; } }
-@media only screen and (max-width: 1200px) {
-  .scene .layer {
-    height: 300px; } }
 @media only screen and (max-width: 1000px) {
   .scene .layer {
     height: 350px; }
